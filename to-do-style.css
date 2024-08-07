@@ -1,0 +1,162 @@
+/* Google Fonts Link */
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Orbitron:wght@400..900&family=Oxanium:wght@200..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Oxanium", sans-serif;
+}
+body {
+    background-color: #000;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: 750px;
+    margin: 100px auto;
+    padding: 20px;
+    align-items: center;
+    text-align: center;
+    background: #fff;
+    border: 4px solid aquamarine;
+    border-radius: 10px;
+}
+header {
+    margin: 20px;
+    font-size: 2.2rem;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+header i {
+    color: #000;
+    font-size: 2.4rem;
+}
+header i:hover {
+    color: rgb(146, 225, 199);
+    cursor: pointer;
+}
+.add-task {
+    width: 90%;
+    height: 90px;
+}
+.add-task input {
+    height: 60px;
+    margin: 10px;
+    width: 70%;
+    padding: 20px;
+    font-size: 1.5rem;
+    background: none;
+    color: #000;
+}
+
+.add-task button {
+    height: 56px;
+    width: 25%;
+    font-size: 1.5rem;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+}
+.add-task button:hover {
+    cursor: pointer;
+    background: rgb(146, 225, 199);
+    color: #000;
+    border: 2px solid #000;
+}
+
+.tasks-section {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    height: 100%;
+    /* border: 2px solid black; */
+    margin: 20px 0;
+}
+
+.incomplete-tasks {
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid black; */
+    margin: 30px;
+    padding: 20px;
+    width: 50%;
+    align-items: center;
+}
+
+.incomplete-tasks h2 {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Add some space between the h2 and the icon */
+    text-decoration: underline;
+    font-size: 1.8rem;
+}
+
+.task {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Space out the icons and the text */
+    margin: 15px 0; /* Add some spacing between tasks */
+    font-size: 1.4rem;
+}
+
+.task p {
+    margin: 0;
+    flex-grow: 1; /* Allow the text to take up remaining space */
+}
+
+.task i {
+    margin-left: 10px; /* Space out the icons from the text */
+}
+.task i:hover {
+    color: rgb(146, 225, 199);
+    cursor: pointer;
+}
+.task i#delete-task:hover {
+    color: red;
+}
+
+.completed-tasks {
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid black; */
+    margin: 30px;
+    padding: 20px;
+    width: 50%;
+    align-items: center;
+}
+.completed-tasks h2 {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Add some space between the h2 and the icon */
+    text-decoration: underline;
+    font-size: 1.8rem;
+}
+.task-checked {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Space out the icons and the text */
+    margin: 15px 0; /* Add some spacing between tasks */
+    font-size: 1.4rem;
+}
+.task-checked p {
+    margin: 0;
+    flex-grow: 1; /* Allow the text to take up remaining space */
+}
+.task-checked i {
+    margin-left: 10px; /* Space out the icons from the text */
+    color: #000;
+}
+.task-checked i:hover {
+    color: rgb(146, 225, 199);
+    cursor: pointer;
+}
+.task-checked i#task-completed {
+    margin-left: 10px; /* Space out the icons from the text */
+    color: rgb(146, 225, 199);
+    display: none;
+}
+

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="to-do-style.css">
+    <title>To-Do List</title>
+</head>
+    <body>
+        <div class="container">
+            <header>
+                <h1>To-do List</h1>
+                    <i class="fa-regular fa-calendar-days"></i>
+            </header>
+            <div class="add-task">
+                <input type="text" placeholder="Write your new task">
+                <button type="submit" id="submitButton" name="submitButton">Add Task</button>
+            </div>
+            <div class="tasks-section">
+                <div class="incomplete-tasks">
+                    <h2>Tasks to Complete <i class="fa-regular fa-hourglass-half"></i></h2>
+                    <!-- <div class="task"></div> -->
+                </div>
+
+                <div class="completed-tasks">
+                    <h2>Completed <i class="fa-solid fa-hourglass-end"></i></h2>
+                    <!-- <div class="task-checked"></div> -->
+                </div>
+            </div>
+    </div>
+
+        <!-- Link for Icons -->
+        <script src="https://kit.fontawesome.com/7b01594302.js" crossorigin="anonymous"></script>
+        <script src="todoList.js"></script>
+    </body>
+</html>
